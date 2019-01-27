@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center" id="burger-title">
+            <img src="" alt="">
             <h1>EAT DA BÖRGER!</h1>
         </div>
         <div class="col-md-6 text-center" class="task">
@@ -32,15 +33,18 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center enter_section">
-            <form action="/burgers/create" method="POST">
-            <input type="text" name="burger_name" class="form-control" value="" id="enter_text">
-            <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
-            </form>
-            <p>WHAT YOU HAVIN</p>
-        </div>
-    </div>
+<h2>Add a Burger</h2>
+<form class="create-form">
 
-</div>
+  <div class="form-group">
+    <label for="burger">Burger Name:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Devoured?</label><br>
+    
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
