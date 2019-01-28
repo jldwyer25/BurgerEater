@@ -1,5 +1,5 @@
-CREATE DATABASE burgers_db;
-USE burgers_db;
+CREATE DATABASE b08eau7s7v1gf9ub;
+USE b08eau7s7v1gf9ub;
 
 -- Create the table tasks.
 CREATE TABLE burgers
