@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 3000;
 //==========ROUTES IMPORTED FROM CONTROLLER PAGE======================================================
 var routes = require('./controllers/burgersController')
 
-//saves express functionality as a variable. Still iffy on how it becomes a dot-operator that works so strong
+//saves express functionalities as a variable. Still iffy on how it becomes a dot-operator that works so strong
 var app = express();
 app.use(express.static(__dirname + '/public'));
 //app.use(express.static('public'));

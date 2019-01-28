@@ -1,4 +1,4 @@
-//Connection based on CATS activity
+//Connection based on CATS activity 
 
 var mysql = require("mysql");
 

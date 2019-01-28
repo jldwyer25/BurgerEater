@@ -1,6 +1,4 @@
-// `selectAll()`
-// * `insertOne()`
-// * `updateOne()`
+
 
 //psuedocode and skeletons taken from cats activity - print question marks, obj to sql, and orm naming
 

@@ -2,7 +2,7 @@
 var express = require('express');
 //sets up the routing ability of express? Maybe? Need clarity
 var router = express.Router();
-//imports burger.js now that it's written
+//imports burger.js now that it's writtens
 var burger = require('../models/burger.js');
 
 //lets the virtual path be established
