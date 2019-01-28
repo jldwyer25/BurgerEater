@@ -23,7 +23,7 @@ router.post('/burgers', function(req,res){
         req.body.burger_name
     ], function(data){
         res.redirect('/');
-    })
+    });
 })
 
 //links the update 
