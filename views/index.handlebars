@@ -33,18 +33,14 @@
     </div>
 </div>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burger">Burger Name:</label>
-    <input type="text" id="burger" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured">Devoured</label><br>
-    
-  </div>
-
-  <button type="submit">Add Burger?</button>
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center enter_section">
+            <form action="/burgers/create" method="POST">
+            <input type="text" name="burger_name" class="form_control" value="" id="enter_text">
+            <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
+            </form>
+            <p>WHAT YA EATIN?</p>
+        </div>
+    </div>
+</div>
