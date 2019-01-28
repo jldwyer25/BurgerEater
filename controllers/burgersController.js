@@ -16,31 +16,23 @@ router.get('/', function(req, res){
     });
 });
 
-router.post('/api/burgers', function(req,res){
-    burger.insert([
-        "burger_name", "devoured"
+router.post('/burgers', function(req,res){
+    burger.insertOne([
+        "burger_name"
     ],[
-        req.body.burger_name, req.body.devoured
-    ], function(result){
-        res.json({id: result.insertId});
+        req.body.burger_name
+    ], function(data){
+        res.redirect('/');
     })
 })
 
 //links the update 
 router.put('/api/burgers/:id', function(req, res){
-    var condition = "id = " + req.params.id;
+    var id = req.params.id;
 
-    console.log("condition", condition);
-
-    burger.update({
-        devoured: req.body.devoured
-    }, condition, function(result)  {
-        if(result.changedRows = 0) {
-            return res.status(404).end();
-        } else {
-            res.status(200).end();
-        }
-    });
+    burger.update(id, function (){
+        res.redirect("/");
+    })
 });
 
 

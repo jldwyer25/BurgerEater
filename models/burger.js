@@ -15,8 +15,8 @@ var burger = {
     });
   },
   // The variables cols and vals are arrays.
-  update: function(objColVals, condition, cb) {
-    orm.updateOne("burgers", objColVals, condition, function(res){
+  update: function(id, cb) {
+    orm.updateOne(id, function(res){
       cb(res);
     });
   }
